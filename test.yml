@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+functions:
+  test:
+    lang: node12
+    handler: .
+    image: test
+    environment:
+      write_debug: true
